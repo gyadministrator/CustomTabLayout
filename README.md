@@ -22,7 +22,7 @@
     }
 
   dependencies {
-		implementation 'com.github.gyadministrator:CustomTabLayout:1.0'
+		implementation 'com.github.gyadministrator:CustomTabLayout:1.1'
 	}
 
 

@@ -68,9 +68,16 @@ public class CustomTabLayout extends TabLayout {
                 View customView = tabAt.getCustomView();
                 if (customView != null) {
                     TextView tvItem = customView.findViewById(R.id.tv_item);
-                    tvItem.setTextSize(normalTextSize / 2);
-                    tvItem.setTextColor(normalTextColor);
-                    tvItem.setText(tabAt.getText());
+                    if (i == 0) {
+                        tvItem.setTextColor(selectTextColor);
+                        tvItem.setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));//加粗
+                        tvItem.setTextSize(selectTextSize / 2);
+                        tvItem.setText(tabAt.getText());
+                    } else {
+                        tvItem.setTextSize(normalTextSize / 2);
+                        tvItem.setTextColor(normalTextColor);
+                        tvItem.setText(tabAt.getText());
+                    }
                 }
             }
         }
