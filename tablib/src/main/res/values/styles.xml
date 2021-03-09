@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="CustomTabLayout">
+        <attr name="normalTextColor" format="color" />
+        <attr name="selectTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selectTextSize" format="dimension" />
+    </declare-styleable>
+</resources>
